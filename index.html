@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome cdn-->
+    <script
+      src="https://kit.fontawesome.com/c67e0e4ac2.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwindcss cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyUI cdn -->
@@ -26,6 +31,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "nature-primary-color": "#179800",
             },
           },
         },
@@ -38,11 +44,69 @@
       .poppins-font {
         font-family: "Poppins", serif;
       }
+      .nav-item-color {
+        color: black;
+      }
     </style>
   </head>
   <body class="sora-font">
     <!-- header part -->
-    <header></header>
+    <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
+      <!-- navbar part -->
+      <nav
+        class="container mx-auto border-solid border-b-2 border-[#179800] lg:border-none"
+      >
+        <div class="navbar">
+          <div class="navbar-start">
+            <a class="lg:hidden"><img src="c2-assets/leap.png" alt="" /></a>
+            <a class="hidden lg:flex"
+              ><img src="c2-assets/logo-header.png" alt=""
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a class="nav-item-color text-[20px]">Product</a>
+              </li>
+              <li><a class="nav-item-color text-[20px]">Services</a></li>
+              <li><a class="nav-item-color text-[20px]">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <img
+              class="hidden lg:flex mr-6"
+              src="c2-assets/search.png"
+              alt=""
+            />
+            <img
+              class="hidden lg:flex mr-6 text-black"
+              src="c2-assets/cart.png"
+              alt=""
+            />
+            <a
+              class="btn hidden lg:flex mr-3 text-black border-solid border-5 border-[#179800] text-[20px]"
+              >Login</a
+            >
+            <a class="btn hidden lg:flex text-white bg-[#179800] text-[20px]"
+              >Register</a
+            >
+            <img class="lg:hidden" src="c2-assets/bars-3.png" alt="" />
+          </div>
+        </div>
+      </nav>
+      <!-- banner part -->
+      <div class="container mx-auto text-center pt-12 lg:pt-[90px]">
+        <h1 class="font-semibold text-3xl lg:text-6xl mb-8">
+          Freshness <span class="text-[#179800]">You Can</span> <br />
+          <span class="text-[#179800]">Count</span> On, Prices You’ll Love!
+        </h1>
+        <p class="text-[20px] max-w-[800px] mx-auto">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we’ve got you covered every day!
+        </p>
+        <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="" />
+      </div>
+    </header>
     <!-- main part -->
     <main></main>
     <!-- footer part -->
